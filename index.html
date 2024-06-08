@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Image/icon1.png">
+
+    <title>Travel Trove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Travel Trove</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="scrollToBanaue()">Page</a></li>
+                <li><a href="#" onclick="scrollToFooter()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Travel Trove</h1>
+                <p>Let's dive into the beauty of this place!</p>
+                <br>
+                <div class="section" id="banaue-section">
+                    <button class="button-inline" onclick="scrollToBanaue()">Let's go!</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="spots-box">
+            <div class="spot">
+                <img src="Image/Banau.jpg" alt="Rice Terraces" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Banaue Rice Terraces</h3>
+                    <p class="spot-description">Located at Ifugao</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Often called the "Eighth Wonder of the World," these 2,000-year-old terraces in Ifugao were carved into the mountains by indigenous people and are still used for farming today.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Puer.jpg" alt="Underground River" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Underground River</h3>
+                    <p class="spot-description">Located at Puerto Princesa</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        This UNESCO World Heritage Site features an 8.2-kilometer-long underground river that flows directly into the sea. Visitors can take boat tours to explore its impressive cave system and limestone karst landscape.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Bora.jpg" alt="Boracay Beach" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Boracay Beach</h3>
+                    <p class="spot-description">Located at Albay.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Famous for its stunning white-sand beaches and crystal-clear waters, Boracay is a top destination for beach lovers and water sports enthusiasts. White Beach is particularly renowned for its vibrant nightlife and sunset views.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Mayo.jpg" alt="Mayon Volcano" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Mayon Volcano</h3>
+                    <p class="spot-description">Located at Albay.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Renowned for its perfect conical shape, this active volcano in Albay, Bicol is a stunning sight and a popular spot for hiking and photography.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Choc.jpg" alt="Chocolate Hills" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Chocolate Hills</h3>
+                    <p class="spot-description">Located at Bohol.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Known for its unique geological formation, the Chocolate Hills are a group of unusually shaped hills in the Bohol province. During the dry season, the hills' grass turns brown, hence the name.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/siar.jpg" alt="Siargao" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Siargao Island</h3>
+                    <p class="spot-description">Located at Surigao del Norte.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Known as the Surfing Capital of the Philippines, Siargao Island is famous for its excellent surf breaks, stunning lagoons, and relaxed island vibe.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Tubba.jpg" alt="Tubataha" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Tubbataha Reefs Natural Park</h3>
+                    <p class="spot-description">Located at Sulu Sea.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        A UNESCO World Heritage Site located in the Sulu Sea, it's one of the best diving spots in the world, teeming with marine life and coral reefs.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/fortsa.jpg" alt="Fort San Pedro" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Fort San Pedro</h3>
+                    <p class="spot-description">Located at Cebu City.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        It's a triangular-shaped fortress built during the Spanish colonial period, specifically in 1565, under the command of Spanish conquistador Miguel López de Legazpi, who founded the city of Cebu.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/Elni.jpg" alt="El Nido" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">El Nido </h3>
+                    <p class="spot-description">Located at Palawan.</p> 
+                     <p class="spot-description">₱ 6,000-7,000</p>
+                     <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        El Nido is a breathtakingly beautiful destination located on the northern tip of Palawan Island in the Philippines. It's renowned for its stunning limestone cliffs, crystal-clear turquoise waters, and pristine white-sand beaches.
+                    </div>
+                </div>
+            </div>
+            <div class="spot">
+                <img src="Image/intra.JPG" alt="Intramuros" class="spot-image">
+                <div class="spot-details">
+                    <h3 class="spot-title">Intramuros</h3>
+                    <p class="spot-description">Located in Manila.</p>
+                    <p class="spot-description">₱ 6,000-7,000</p>
+                    <br>
+                    <span class="spot-link" onclick="toggleDetails(this)">Read more</span>
+                    <div class="spot-extra">
+                        Intramuros, also known as the Walled City, is the historic core of Manila. It is a place of great historical and cultural significance, featuring preserved Spanish-era structures and museums.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Travel Trove is your ultimate travel guide, helping you explore the world's most beautiful destinations.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: johnbrianlorena@gmail.com</p>
+                <p>Phone: +630215473317</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Travel Trove. All rights reserved.
+        </div>
+    </footer>
+    <script>
+       
+        function toggleDetails(element) {
+     const spotDetails = element.parentNode.querySelector('.spot-extra');
+     if (spotDetails.style.display === "none" || spotDetails.style.display === "") {
+        spotDetails.style.display = "block";
+        element.textContent = "Read less";
+     } else {
+        spotDetails.style.display = "none";
+        element.textContent = "Read more";
+     }
+      }
+ 
+
+      
+        function scrollToBanaue() {
+            document.getElementById('banaue-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSpots() {
+            document.getElementById('spots-box').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToFooter() {
+            document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
